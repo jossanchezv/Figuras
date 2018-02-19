@@ -10,6 +10,15 @@ package figuras.logica;
  * @author Estudiantes
  */
 public class circulo extends ops {
+
+    public circulo(punto pa, punto pb) {
+        p1 = pa;
+        p2 = pb;
+        
+        
+    }
+    
+    
     public void calcular (){
         System.out.println("");
     }

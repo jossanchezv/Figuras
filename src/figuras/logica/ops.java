@@ -22,5 +22,4 @@ public abstract class ops {
      public float getperimetro(){
         return perimetro;
     }
-    
 }

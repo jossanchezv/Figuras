@@ -32,9 +32,7 @@ public class punto {
     public float getY1() {
         return y1;
     }
-    public float getarea(){
-        return area;
-    }
+  
     
     
 }

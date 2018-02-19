@@ -32,21 +32,6 @@ public class Figuras {
         Scanner sc =  new Scanner (System.in);
         opcion = sc.nextInt();
         ops s;
-        switch (opcion){
-            case '1':
-            s = new circulo();    
-            break;
-            case '2':
-            s = new cuadrado();    
-            break;
-            case '3':
-            s = new rectangulo();    
-            break;
-             case '4':
-            s = new triangulo();    
-            break;
-        }
-        
         punto p1 = new punto();
         punto p2 = new punto();
         System.out.println("Ingrese X1");
@@ -56,12 +41,23 @@ public class Figuras {
         System.out.println("Ingreser X2");
         p2.setX1(sc.nextInt());
         System.out.println("Ingrese y2");
-        p2.setY1(sc.nextInt());
+        p2.setY1(sc.nextInt());   
         
-    }
-
-    private static void Switch(int opcion) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-    
+        switch (opcion){
+            case '1':
+            s = new circulo(p1,p2);    
+            break;
+            case '2':
+            s = new cuadrado(p1,p2);    
+            break;
+            case '3':
+            s = new rectangulo();    
+            break;
+             case '4':
+            s = new triangulo();    
+            break;
+        }
+        System.out.println(s.calculararea());
+        System.out.println(s.calcularperimetro());
+    }    
 }
