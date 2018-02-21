@@ -9,28 +9,22 @@ package figuras.logica;
  *
  * @author Estudiantes
  */
-public class circulo extends ops {
+public class circulo extends figura {
 
-    public circulo(punto pa, punto pb) {
-        p1 = pa;
-        p2 = pb;
-        
-        
-    }
     
     
-    public void calcular (){
-        System.out.println("");
+    @Override
+    public double calculararea() {
+        area = (Math.PI)*(dist*dist);
+        
+        return area;
     }
 
     @Override
-    public float calculararea() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    @Override
-    public float calcularperimetro() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public double calcularperimetro() {
+        perimetro = 2*(Math.PI)*dist;
+        
+        return perimetro;
     }
     
 }

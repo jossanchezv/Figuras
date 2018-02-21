@@ -9,15 +9,15 @@ package figuras.logica;
  *
  * @author Estudiantes
  */
-public class triangulo extends ops {
+public class triangulo extends figura {
 
     @Override
-    public float calculararea() {
+    public double calculararea() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
-    public float calcularperimetro() {
+    public double calcularperimetro() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     

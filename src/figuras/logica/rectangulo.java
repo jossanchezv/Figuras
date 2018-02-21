@@ -9,17 +9,26 @@ package figuras.logica;
  *
  * @author Estudiantes
  */
-public class rectangulo extends ops {
+public class rectangulo extends figura {
     
+    Operaciones op = new Operaciones();
+    
+    double base, altura;
     
     @Override
-    public float calculararea() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public double calculararea() {
+        base = op.calcularbase(p2, p1);
+        altura = op.calcularaltura(p2, p1);
+        area=base*altura;
+        return base;
     }
 
     @Override
-    public float calcularperimetro() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public double calcularperimetro() {
+        base = op.calcularbase(p2, p1);
+        altura = op.calcularaltura(p2, p1);
+        perimetro = (2*base)+(2*altura);
+        return perimetro;
     }
     
 }

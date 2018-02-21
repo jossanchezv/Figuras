@@ -9,17 +9,18 @@ package figuras.logica;
  *
  * @author Estudiantes
  */
-public abstract class ops {
-    float area, perimetro,distancia;
+public abstract class figura {
+    double area, perimetro;
     punto p1;
     punto p2;
     
-    public abstract float calculararea();
-    public abstract float calcularperimetro();
-    public float getarea(){
-        return area;
+    double dist;
+    
+    public void SetDist(double dist) {
+        this.dist = dist;
     }
-     public float getperimetro(){
-        return perimetro;
-    }
+    
+    public abstract double calculararea();
+    public abstract double calcularperimetro();
+
 }

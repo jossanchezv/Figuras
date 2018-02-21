@@ -9,29 +9,26 @@ package figuras.logica;
  *
  * @author Estudiantes
  */
-public class cuadrado extends ops {
-
-    public cuadrado(punto pa, punto pb) {
-        p1 = pa;
-        p2 = pb;
-    }
-    
+public class cuadrado extends figura {
     
     @Override
-    public float calculararea() {
-        float lado = this.p1.calculardistancia(this.p2);
-        this.area=lado*lado;
-        System.out.println("El area es:"+area);      
-        return 0;
+    public double calculararea() {
+        area = dist*dist;
+        return area;
     }
 
     @Override
-    public float calcularperimetro() {
-        float lado = this.p1.calculardistancia(this.p2);
-        this.perimetro=lado*4;
-        System.out.println("El area es:"+perimetro);   
-       return 0;
+    public double calcularperimetro() {
+        perimetro = dist*4;
+        
+       return perimetro;
     }
+    
+    
+    public void imprimir () {
+        
+    }
+    
     
     
 }
